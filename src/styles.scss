@@ -1,0 +1,68 @@
+// Variables
+//
+$app-primary-color: rgb(78, 150, 209);
+$app-secondary-color: rgb(104, 216, 76);
+$app-tertiary-color: rgb(214, 69, 43);
+
+$app-button-primary-color: $app-primary-color;
+$app-button-secondary-color: $app-secondary-color;
+$app-button-tertiary-color: $app-tertiary-color;
+
+// General 
+//
+body {
+    background: rgb(12, 0, 0);
+}
+
+.app-container {
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+// Button
+//
+.button {
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &.primary {
+        border-color: $app-button-primary-color;
+        color: $app-button-primary-color;
+    }
+
+    &.secondary {
+        border-color: $app-button-secondary-color;
+        color: $app-button-secondary-color;
+    }
+
+    &.tertiary {
+        border-color: $app-button-tertiary-color;
+        color: $app-button-tertiary-color;
+    }
+}
+
+// header 
+// 
+.app-header {
+    padding: 20px;
+    border: 2px solid $app-primary-color;
+    color: $app-primary-color;  
+    font-weight: bold;
+    margin: 30px 0px;
+    font-size: 30px;
+}
+
+// Helpers 
+//
+.right {
+    position: relative;
+    float: right;
+}
+
+.left {
+    position: relative;
+    float: left;
+}
